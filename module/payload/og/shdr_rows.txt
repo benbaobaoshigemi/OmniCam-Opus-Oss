@@ -1,0 +1,3 @@
+    Mode[52]    =          0;         0x800B;         0x0001;                1;            1;          -1           #OpenGate main (physical) HDR video
+    Mode[53]    =          3;         0x800B;         0x0008;                1;            1;          -1           #OpenGate tele (physical) HDR video
+    Mode[54]    =          2;         0x800B;         0x0004;                1;            0;          -1           #OpenGate ultra wide (physical) HDR video

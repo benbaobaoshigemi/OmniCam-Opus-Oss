@@ -1,0 +1,13 @@
+# OpenGate private keys -> full-frame mode of the 4K readout family
+        lighthousemain[0x800040][-1] = 7;
+        lighthousewide[0x800040][-1] = 3;
+        lighthousetele[0x800040][-1] = 3;
+        lighthousemain[0x802040][-1] = 7;
+        lighthousewide[0x802040][-1] = 3;
+        lighthousetele[0x802040][-1] = 3;
+        lighthousemain[0x800200][-1] = 7;
+        lighthousewide[0x800200][-1] = 3;
+        lighthousetele[0x800200][-1] = 3;
+        lighthousemain[0x802200][-1] = 7;
+        lighthousewide[0x802200][-1] = 3;
+        lighthousetele[0x802200][-1] = 3;

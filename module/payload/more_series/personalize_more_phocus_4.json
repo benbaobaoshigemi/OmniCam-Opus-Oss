@@ -1,0 +1,31 @@
+{
+  "styleId": "personalize_more_phocus_4",
+  "version": 1,
+  "baseImageSize": 878,
+  "imageOffset": {
+    "startX": 0.0,
+    "startY": 0.0
+  },
+  "size": {
+    "leftMargin": 0.0,
+    "topMargin": 0.0,
+    "rightMargin": 0.0,
+    "bottomMargin": 90.0
+  },
+  "background": {
+    "backgroundType": 0,
+    "color": "#FFFFFF"
+  },
+  "bitmaps": [
+    {
+      "direction": 3,
+      "width": 0,
+      "height": 0,
+      "position": {
+        "borderX": 0,
+        "borderY": 0
+      },
+      "elements": []
+    }
+  ]
+}

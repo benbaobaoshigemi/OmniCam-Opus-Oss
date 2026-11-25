@@ -1,0 +1,653 @@
+{
+  "films": [
+    {
+      "id": "portra400",
+      "label": "Portra 400",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 柯达"
+    },
+    {
+      "id": "ektar100",
+      "label": "Ektar 100",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 柯达"
+    },
+    {
+      "id": "gold200",
+      "label": "Gold 200",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 柯达"
+    },
+    {
+      "id": "ultramax400",
+      "label": "UltraMax 400",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 柯达"
+    },
+    {
+      "id": "kodacolor100",
+      "label": "Kodacolor 100",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 柯达"
+    },
+    {
+      "id": "pro400h",
+      "label": "PRO 400H",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "pro160ns",
+      "label": "PRO 160NS",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "superia200",
+      "label": "Superia 200",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "superia400",
+      "label": "Superia X-TRA 400",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "c200",
+      "label": "C200",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "reala100",
+      "label": "Reala 100",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "reala500d",
+      "label": "Reala 500D",
+      "native": 7,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "verita200d",
+      "label": "VERITA 200D",
+      "native": 5,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "彩色负片 · 富士"
+    },
+    {
+      "id": "lomocolor100",
+      "label": "Color Negative 100",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 其他"
+    },
+    {
+      "id": "phoenix200",
+      "label": "Harman Phoenix 200",
+      "native": 1,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 其他"
+    },
+    {
+      "id": "cinestill400d",
+      "label": "CineStill 400D",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 其他"
+    },
+    {
+      "id": "cinestill800t",
+      "label": "CineStill 800T",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "彩色负片 · 其他"
+    },
+    {
+      "id": "vision500t",
+      "label": "Vision3 500T",
+      "native": 5,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "电影卷"
+    },
+    {
+      "id": "vision250d",
+      "label": "Vision3 250D",
+      "native": 5,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "电影卷"
+    },
+    {
+      "id": "eterna500",
+      "label": "Eterna 500",
+      "native": 7,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "电影卷"
+    },
+    {
+      "id": "eternavivid500",
+      "label": "Eterna Vivid 500",
+      "native": 7,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "电影卷"
+    },
+    {
+      "id": "f64d",
+      "label": "F-64D",
+      "native": 7,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": true,
+      "reflection": false,
+      "group": "电影卷"
+    },
+    {
+      "id": "aerocolor2460",
+      "label": "Aerocolor IV 2460",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        2,
+        4
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "电影卷"
+    },
+    {
+      "id": "provia100f",
+      "label": "Provia 100F",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 富士"
+    },
+    {
+      "id": "velvia50",
+      "label": "Velvia 50",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        1
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 富士"
+    },
+    {
+      "id": "astia100f",
+      "label": "Astia 100F",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 富士"
+    },
+    {
+      "id": "ektachromee100",
+      "label": "Ektachrome E100",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        1
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 柯达"
+    },
+    {
+      "id": "kodachrome25",
+      "label": "Kodachrome 25",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 柯达"
+    },
+    {
+      "id": "kodachrome64",
+      "label": "Kodachrome 64",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 柯达"
+    },
+    {
+      "id": "kodachrome200",
+      "label": "Kodachrome 200",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 柯达"
+    },
+    {
+      "id": "agfachrome50",
+      "label": "Agfachrome RSX II 50",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 爱克发"
+    },
+    {
+      "id": "agfachrome100",
+      "label": "Agfachrome RSX II 100",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 爱克发"
+    },
+    {
+      "id": "agfachrome200",
+      "label": "Agfachrome RSX II 200",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [
+        -1,
+        1,
+        2
+      ],
+      "dir": true,
+      "projected": false,
+      "reflection": false,
+      "group": "反转片 · 爱克发"
+    },
+    {
+      "id": "lomochromemetropolis",
+      "label": "LomoChrome Metropolis",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "色彩实验"
+    },
+    {
+      "id": "lomochromepurple",
+      "label": "LomoChrome Purple",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "色彩实验"
+    },
+    {
+      "id": "lomochrometurquoise",
+      "label": "LomoChrome Turquoise",
+      "native": 2,
+      "positive": false,
+      "monochrome": false,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "色彩实验"
+    },
+    {
+      "id": "acros100",
+      "label": "Acros 100 II",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        -1,
+        1
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "trix400",
+      "label": "Tri-X 400",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        2,
+        3
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "tmax100",
+      "label": "T-MAX 100",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "doublex5222",
+      "label": "Double-X 5222",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        -2,
+        -1,
+        2,
+        3
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "hp5plus400",
+      "label": "HP5 Plus 400",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "fp4plus125",
+      "label": "FP4 Plus 125",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        -1.3333,
+        0.6667
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "delta3200",
+      "label": "Delta 3200",
+      "native": 2,
+      "positive": false,
+      "monochrome": true,
+      "pushes": [
+        -2,
+        1,
+        2
+      ],
+      "dir": false,
+      "projected": false,
+      "reflection": false,
+      "group": "黑白胶片"
+    },
+    {
+      "id": "instaxmini",
+      "label": "拍立得",
+      "native": 2,
+      "positive": true,
+      "monochrome": false,
+      "pushes": [],
+      "dir": false,
+      "projected": false,
+      "reflection": true,
+      "group": "拍立得"
+    }
+  ]
+}

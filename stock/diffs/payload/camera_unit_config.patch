@@ -1,0 +1,341 @@
+--- a/module/payload/camera_unit_config
++++ b/module/payload/camera_unit_config
+@@ -22,7 +22,10 @@
+       "movie_mode",
+       "slowvideo_mode",
+       "long_exposure_mode",
+-      "under_water_mode"
++      "under_water_mode",
++      "gr_mode",
++      "retro_camera_mode",
++      "tilt_shift_mode"
+     ],
+     "rear_main": [
+       "video_mode",
+@@ -38,7 +41,10 @@
+       "panorama_mode",
+       "long_exposure_mode",
+       "high_pixel_mode",
+-      "under_water_mode"
++      "under_water_mode",
++      "gr_mode",
++      "retro_camera_mode",
++      "tilt_shift_mode"
+     ],
+     "rear_tele": [
+       "video_mode",
+@@ -48,7 +54,10 @@
+       "slowvideo_mode",
+       "photo_mode",
+       "telephoto_video_mode",
+-      "telephoto_capture_mode"
++      "telephoto_capture_mode",
++      "gr_mode",
++      "retro_camera_mode",
++      "tilt_shift_mode"
+     ],
+     "rear_ultra_tele": [
+       "video_mode",
+@@ -59,7 +68,10 @@
+       "professional_mode",
+       "movie_mode",
+       "slowvideo_mode",
+-      "long_exposure_mode"
++      "long_exposure_mode",
++      "gr_mode",
++      "retro_camera_mode",
++      "tilt_shift_mode"
+     ],
+     "front_main": [
+       "video_mode",
+@@ -69,7 +81,8 @@
+       "fastvideo_mode",
+       "id_photo_mode",
+       "night_mode",
+-      "panorama_mode"
++      "panorama_mode",
++      "retro_camera_mode"
+     ],
+     "rear_sat": [
+       "video_mode",
+@@ -79,7 +92,10 @@
+       "portrait_mode",
+       "night_mode",
+       "fastvideo_mode",
+-      "professional_mode"
++      "professional_mode",
++      "gr_mode",
++      "retro_camera_mode",
++      "tilt_shift_mode"
+     ],
+     "rear_main_front_main": [
+       "multi_camera_mode"
+@@ -187,6 +203,7 @@
+     "night_mode": "8019",
+     "panorama_mode": "8007",
+     "professional_mode": "8009",
++    "gr_mode": "8009",
+     "sticker_mode": "800E",
+     "fastvideo_mode": "800C",
+     "slowvideo_mode": "1",
+@@ -202,7 +219,8 @@
+     "long_exposure_mode": "80AA",
+     "high_pixel_mode": "8001",
+     "tilt_shift_mode": "8001",
+-    "under_water_mode": "80AD"
++    "under_water_mode": "80AD",
++    "retro_camera_mode": "8001"
+   },
+   "usecase_info": {
+     "sat_photo_case": [
+@@ -1152,6 +1170,94 @@
+         "preview_in_preview": "rear_sat"
+       }
+     ],
++    "gr_mode_case": [
++      {
++        "capture_meta": "var_camera"
++      },
++      {
++        "preview": "var_camera"
++      },
++      {
++        "raw_output": "rear_main"
++      },
++      {
++        "raw_output": "rear_wide"
++      },
++      {
++        "raw_output": "rear_tele"
++      },
++      {
++        "raw_output": "rear_ultra_tele"
++      },
++      {
++        "capture_raw10_dol": "rear_main"
++      },
++      {
++        "capture_raw10_dol": "rear_wide"
++      },
++      {
++        "capture_raw10_dol": "rear_tele"
++      },
++      {
++        "capture_raw10_dol": "rear_ultra_tele"
++      },
++      {
++        "capture_raw10_3dol": "rear_main"
++      },
++      {
++        "preview_in_preview": "rear_sat"
++      }
++    ],
++    "gr_mode_hq_raw_case": [
++      {
++        "capture_meta": "var_camera"
++      },
++      {
++        "preview": "rear_sat"
++      },
++      {
++        "capture_raw10_fullsize": "rear_main"
++      },
++      {
++        "capture_raw10_fullsize": "rear_wide"
++      },
++      {
++        "capture_raw10_fullsize": "rear_tele"
++      },
++      {
++        "capture_raw10_fullsize": "rear_ultra_tele"
++      },
++      {
++        "raw_output": "rear_main"
++      },
++      {
++        "raw_output": "rear_wide"
++      },
++      {
++        "raw_output": "rear_tele"
++      },
++      {
++        "raw_output": "rear_ultra_tele"
++      },
++      {
++        "capture_raw10_dol": "rear_main"
++      },
++      {
++        "capture_raw10_dol": "rear_wide"
++      },
++      {
++        "capture_raw10_dol": "rear_tele"
++      },
++      {
++        "capture_raw10_dol": "rear_ultra_tele"
++      },
++      {
++        "capture_raw10_3dol": "rear_main"
++      },
++      {
++        "preview_in_preview": "rear_sat"
++      }
++    ],
+     "xpan_case": [
+       {
+         "preview": "var_camera"
+@@ -1288,6 +1394,62 @@
+       },
+       {
+         "capture_raw10_dol": "front_main"
++      }
++    ],
++    "retro_camera_case": [
++      {
++        "capture_meta": "rear_sat"
++      },
++      {
++        "preview": "rear_sat"
++      },
++      {
++        "raw_output": "rear_main"
++      },
++      {
++        "raw_output": "rear_wide"
++      },
++      {
++        "raw_output": "rear_tele"
++      },
++      {
++        "raw_output": "rear_ultra_tele"
++      },
++      {
++        "preview_in_preview": "rear_sat"
++      },
++      {
++        "capture_raw10_dol": "rear_main"
++      },
++      {
++        "capture_raw10_dol": "rear_wide"
++      },
++      {
++        "capture_raw10_dol": "rear_tele"
++      },
++      {
++        "capture_raw10_dol": "rear_ultra_tele"
++      },
++      {
++        "capture_raw10_3dol": "rear_main"
++      },
++      {
++        "capture_raw10_fullsize": "rear_main"
++      },
++      {
++        "capture_raw10_fullsize": "rear_wide"
++      },
++      {
++        "capture_raw10_fullsize": "rear_tele"
++      },
++      {
++        "capture_raw10_fullsize": "rear_ultra_tele"
++      },
++      {
++        "raw10_high_output": "rear_ultra_tele"
++      },
++      {
++        "capture_raw16_cs": "rear_sat"
+       }
+     ]
+   },
+@@ -1734,6 +1896,31 @@
+         "2dol": "2"
+       }
+     },
++    "tilt_shift_mode": {
++      "rear_wide": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_main": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_tele": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_ultra_tele": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_sat": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "front_main": {
++        "2dol": "2"
++      }
++    },
+     "night_mode": {
+       "rear_sat": {
+         "2dol": "2",
+@@ -1789,6 +1976,28 @@
+         "3dol": "3"
+       }
+     },
++    "gr_mode": {
++      "rear_wide": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_main": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_tele": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_ultra_tele": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_sat": {
++        "2dol": "2",
++        "3dol": "3"
++      }
++    },
+     "high_pixel_mode": {
+       "rear_wide": {
+         "2dol": "2",
+@@ -1846,6 +2055,31 @@
+       "rear_ultra_tele": {
+         "2dol": "2",
+         "3dol": "3"
++      }
++    },
++    "retro_camera_mode": {
++      "rear_wide": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_main": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_tele": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_ultra_tele": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "rear_sat": {
++        "2dol": "2",
++        "3dol": "3"
++      },
++      "front_main": {
++        "2dol": "2"
+       }
+     }
+   },

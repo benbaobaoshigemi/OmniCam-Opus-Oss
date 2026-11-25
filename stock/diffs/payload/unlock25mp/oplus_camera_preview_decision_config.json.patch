@@ -1,0 +1,345 @@
+--- a/module/payload/unlock25mp/oplus_camera_preview_decision_config.json
++++ b/module/payload/unlock25mp/oplus_camera_preview_decision_config.json
+@@ -10216,74 +10216,12 @@
+                   0
+                 ],
+                 "eq5": [
+-                  "paramsHolder->under_water_status",
+-                  false
+-                ],
+-                "eq6": [
+-                  "paramsHolder->macro_closeup_enable",
+-                  false
+-                ],
+-                "lt": [
+-                  "paramsHolder->current_burst_capture_type",
+-                  2
+-                ],
+-                "eq7": [
+                   "oplusMeta->com.qti.stats_control.is_flash_snapshot",
+                   0
+                 ],
+-                "lt1": [
++                "lt": [
+                   "meta->ANDROID_FLASH_MODE",
+                   2
+-                ],
+-                "eq8": [
+-                  "paramsHolder->interval_shooting_open",
+-                  false
+-                ],
+-                "eq9": [
+-                  "paramsHolder->motion_capture_enable",
+-                  0
+-                ],
+-                "eq10": [
+-                  "oplusMeta->com.qti.stats_control.motion_detected",
+-                  0
+-                ],
+-                "eq111": [
+-                  "oplusMeta->com.oplus.asd.ui.value",
+-                  0
+-                ],
+-                "eq1112": [
+-                  "isLimitedQBC",
+-                  0
+-                ],
+-                "lt2": [
+-                  "captureNumsOf25M",
+-                  2
+-                ],
+-                "or": {
+-                  "eq": [
+-                    "paramsHolder->livephoto_enable",
+-                    false
+-                  ],
+-                  "eq1": [
+-                    "paramsHolder->filter_open",
+-                    0
+-                  ]
+-                },
+-                "lt3": [
+-                  "thermalLevel",
+-                  10
+-                ],
+-                "lt4": [
+-                  "paramsHolder->defer_job_amount",
+-                  200
+-                ],
+-                "eq11113": [
+-                  "paramsHolder->super_text_capture_enable",
+-                  false
+-                ],
+-                "eq111114": [
+-                  "paramsHolder->blacksoft_enable",
+-                  false
+                 ]
+               },
+               "eq": [
+@@ -10338,18 +10276,14 @@
+                   true
+                 ],
+                 "eq1": [
+-                  "paramsHolder->super_text_capture_enable",
+-                  false
+-                ],
+-                "eq2": [
+                   "isHighPixel25MScene",
+                   true
+                 ],
+-                "eq3": [
++                "eq2": [
+                   "sensorSupportDcg",
+                   true
+                 ],
+-                "or2": {
++                "or": {
+                   "eq": [
+                     "aecDolState",
+                     3
+@@ -10365,71 +10299,13 @@
+                     ]
+                   }
+                 },
+-                "eq4": [
+-                  "paramsHolder->under_water_status",
+-                  false
+-                ],
+-                "eq5": [
+-                  "paramsHolder->macro_closeup_enable",
+-                  false
+-                ],
+-                "lt": [
+-                  "paramsHolder->current_burst_capture_type",
+-                  2
+-                ],
+-                "eq6": [
++                "eq3": [
+                   "oplusMeta->com.qti.stats_control.is_flash_snapshot",
+                   0
+                 ],
+-                "lt1": [
++                "lt": [
+                   "meta->ANDROID_FLASH_MODE",
+                   2
+-                ],
+-                "eq7": [
+-                  "paramsHolder->interval_shooting_open",
+-                  false
+-                ],
+-                "eq8": [
+-                  "paramsHolder->motion_capture_enable",
+-                  0
+-                ],
+-                "eq9": [
+-                  "oplusMeta->com.qti.stats_control.motion_detected",
+-                  0
+-                ],
+-                "eq10": [
+-                  "oplusMeta->com.oplus.asd.ui.value",
+-                  0
+-                ],
+-                "eq111": [
+-                  "isLimitedQBC",
+-                  0
+-                ],
+-                "lt2": [
+-                  "captureNumsOf25M",
+-                  2
+-                ],
+-                "or": {
+-                  "eq": [
+-                    "paramsHolder->livephoto_enable",
+-                    false
+-                  ],
+-                  "eq1": [
+-                    "paramsHolder->filter_open",
+-                    0
+-                  ]
+-                },
+-                "lt3": [
+-                  "thermalLevel",
+-                  10
+-                ],
+-                "lt4": [
+-                  "paramsHolder->defer_job_amount",
+-                  200
+-                ],
+-                "eq1112": [
+-                  "paramsHolder->blacksoft_enable",
+-                  false
+                 ]
+               },
+               "eq": [
+@@ -10484,82 +10360,20 @@
+                   true
+                 ],
+                 "eq1": [
+-                  "paramsHolder->super_text_capture_enable",
+-                  false
+-                ],
+-                "eq2": [
+                   "isHighPixel25MScene",
+                   true
+                 ],
+-                "eq3": [
++                "eq2": [
+                   "isSupportHR2Dol",
+                   true
+                 ],
+-                "eq4": [
+-                  "paramsHolder->under_water_status",
+-                  false
+-                ],
+-                "eq5": [
+-                  "paramsHolder->macro_closeup_enable",
+-                  false
+-                ],
+-                "lt": [
+-                  "paramsHolder->current_burst_capture_type",
+-                  2
+-                ],
+-                "eq6": [
++                "eq3": [
+                   "oplusMeta->com.qti.stats_control.is_flash_snapshot",
+                   0
+                 ],
+-                "lt1": [
++                "lt": [
+                   "meta->ANDROID_FLASH_MODE",
+                   2
+-                ],
+-                "eq7": [
+-                  "paramsHolder->interval_shooting_open",
+-                  false
+-                ],
+-                "eq8": [
+-                  "paramsHolder->motion_capture_enable",
+-                  0
+-                ],
+-                "eq9": [
+-                  "oplusMeta->com.qti.stats_control.motion_detected",
+-                  0
+-                ],
+-                "eq10": [
+-                  "oplusMeta->com.oplus.asd.ui.value",
+-                  0
+-                ],
+-                "eq111": [
+-                  "isLimitedQBC",
+-                  0
+-                ],
+-                "lt2": [
+-                  "captureNumsOf25M",
+-                  2
+-                ],
+-                "or": {
+-                  "eq": [
+-                    "paramsHolder->livephoto_enable",
+-                    false
+-                  ],
+-                  "eq1": [
+-                    "paramsHolder->filter_open",
+-                    0
+-                  ]
+-                },
+-                "lt3": [
+-                  "thermalLevel",
+-                  10
+-                ],
+-                "lt4": [
+-                  "paramsHolder->defer_job_amount",
+-                  200
+-                ],
+-                "eq1112": [
+-                  "paramsHolder->blacksoft_enable",
+-                  false
+                 ]
+               },
+               "eq": [
+@@ -10627,82 +10441,20 @@
+                   true
+                 ],
+                 "eq1": [
+-                  "paramsHolder->super_text_capture_enable",
+-                  false
+-                ],
+-                "eq2": [
+                   "isHighPixel25MScene",
+                   true
+                 ],
+-                "eq3": [
++                "eq2": [
+                   "isSupportHR2Dol",
+                   true
+                 ],
+-                "eq4": [
+-                  "paramsHolder->under_water_status",
+-                  false
+-                ],
+-                "eq5": [
+-                  "paramsHolder->macro_closeup_enable",
+-                  false
+-                ],
+-                "lt": [
+-                  "paramsHolder->current_burst_capture_type",
+-                  2
+-                ],
+-                "eq6": [
++                "eq3": [
+                   "oplusMeta->com.qti.stats_control.is_flash_snapshot",
+                   0
+                 ],
+-                "lt1": [
++                "lt": [
+                   "meta->ANDROID_FLASH_MODE",
+                   2
+-                ],
+-                "eq7": [
+-                  "paramsHolder->interval_shooting_open",
+-                  false
+-                ],
+-                "eq8": [
+-                  "paramsHolder->motion_capture_enable",
+-                  0
+-                ],
+-                "eq9": [
+-                  "oplusMeta->com.qti.stats_control.motion_detected",
+-                  0
+-                ],
+-                "eq10": [
+-                  "oplusMeta->com.oplus.asd.ui.value",
+-                  0
+-                ],
+-                "eq111": [
+-                  "isLimitedQBC",
+-                  0
+-                ],
+-                "lt2": [
+-                  "captureNumsOf25M",
+-                  2
+-                ],
+-                "or": {
+-                  "eq": [
+-                    "paramsHolder->livephoto_enable",
+-                    false
+-                  ],
+-                  "eq1": [
+-                    "paramsHolder->filter_open",
+-                    0
+-                  ]
+-                },
+-                "lt3": [
+-                  "thermalLevel",
+-                  10
+-                ],
+-                "lt4": [
+-                  "paramsHolder->defer_job_amount",
+-                  200
+-                ],
+-                "eq1112": [
+-                  "paramsHolder->blacksoft_enable",
+-                  false
+                 ]
+               },
+               "eq": [

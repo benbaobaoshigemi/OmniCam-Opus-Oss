@@ -1,0 +1,190 @@
+--- a/module/payload/oplus_camera_config
++++ b/module/payload/oplus_camera_config
+@@ -45,7 +45,7 @@
+     "VendorTag": "com.oplus.camera.mode.data.db.version",
+     "Type": "Byte",
+     "Count": "1",
+-    "Value": "2"
++    "Value": "102"
+   },
+   {
+     "VendorTag": "com.ocs.camera.ipu.face.beauty.support",
+@@ -110,14 +110,14 @@
+   {
+     "VendorTag": "com.oplus.camera.preview.hdr.cap.mode.value",
+     "Type": "String",
+-    "Count": "7",
+-    "Value": "common,professional,night,highPixel,xpan,underWater,telephoto"
++    "Count": "8",
++    "Value": "common,professional,night,highPixel,xpan,underWater,telephoto,gr"
+   },
+   {
+     "VendorTag": "com.oplus.camera.capture.hdr.cap.mode.value",
+     "Type": "String",
+-    "Count": "8",
+-    "Value": "common,portrait,professional,night,highPixel,xpan,underWater,telephoto"
++    "Count": "9",
++    "Value": "common,portrait,professional,night,highPixel,xpan,underWater,telephoto,gr"
+   },
+   {
+     "VendorTag": "com.oplus.feature.os15.new.filter.support",
+@@ -270,6 +270,12 @@
+     "Value": "1"
+   },
+   {
++    "VendorTag": "com.oplus.camera.livephoto.watermark.scale.content",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
+     "VendorTag": "com.oplus.camera.livephoto.support",
+     "Type": "Byte",
+     "Count": "1",
+@@ -846,16 +852,10 @@
+     "Value": "1"
+   },
+   {
+-    "VendorTag": "com.oplus.camera.livephoto.watermark.scale.content",
+-    "Type": "Byte",
+-    "Count": "1",
+-    "Value": "1"
+-  },
+-  {
+     "VendorTag": "com.oplus.camera.wide.frame.ratio.support.modelist",
+     "Type": "String",
+-    "Count": "4",
+-    "Value": "common,portrait,professional,night"
++    "Count": "5",
++    "Value": "common,portrait,professional,night,retroCamera"
+   },
+   {
+     "VendorTag": "com.oplus.feature.capture.mode.livephoto.size",
+@@ -1496,8 +1496,8 @@
+   {
+     "VendorTag": "com.oplus.flash.decision.by.aps.modelist",
+     "Type": "String",
+-    "Count": "2",
+-    "Value": "common,photo_mode"
++    "Count": "4",
++    "Value": "common,photo_mode,retroCamera,retro_camera_mode"
+   },
+   {
+     "VendorTag": "com.oplus.flash.countdown.support",
+@@ -2913,7 +2913,7 @@
+     "VendorTag": "com.oplus.feature.professional.nonsat.max.zoom.value",
+     "Type": "Float",
+     "Count": "1",
+-    "Value": "20.0"
++    "Value": "120.0"
+   },
+   {
+     "VendorTag": "com.oplus.feature.slowvideo.none.sat.ultra.tele.support",
+@@ -3902,8 +3902,8 @@
+   {
+     "VendorTag": "com.oplus.camera.master.video.feature.list",
+     "Type": "Int32",
+-    "Count": "12",
+-    "Value": "1,1,1,1,1,1,1,2,1,1,1,1"
++    "Count": "17",
++    "Value": "1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1"
+   },
+   {
+     "VendorTag": "com.oplus.master.video.three.state.stabilization",
+@@ -4240,5 +4240,95 @@
+     "Type": "Int32",
+     "Count": "1",
+     "Value": "3"
++  },
++  {
++    "VendorTag": "com.oplus.gr.mode.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.available.gr.mode.zoomvalues",
++    "Type": "String",
++    "Count": "6",
++    "Value": "0.6(14),1(23),2(47),3(70),6(139),10(230)"
++  },
++  {
++    "VendorTag": "com.oplus.gr.mode.marked.zoomvalues",
++    "Type": "String",
++    "Count": "2",
++    "Value": "1.2173913(28),1.7391304(40)"
++  },
++  {
++    "VendorTag": "com.oplus.camera.livephoto.grmode.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "0"
++  },
++  {
++    "VendorTag": "com.oplus.camera.gr.raw.capture_defer.not.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "0"
++  },
++  {
++    "VendorTag": "com.oplus.feature.retro.camera.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.feature.tilt.shift.photo.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.feature.retro.camera.livephoto.output.size",
++    "Type": "Int32",
++    "Count": "8",
++    "Value": "1296x1296x1728x1296x1728x972x1728x636"
++  },
++  {
++    "VendorTag": "com.oplus.camera.retro.fisheye.enable",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.feature.color.palette.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.ipu.color.palette.texture.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.feature.aicomposition.realscene.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.feature.aicomposition.inspiration.support",
++    "Type": "Byte",
++    "Count": "1",
++    "Value": "1"
++  },
++  {
++    "VendorTag": "com.oplus.feature.aicomposition.inspiration.default.oaid",
++    "Type": "String",
++    "Count": "1",
++    "Value": "0358B7AE646DFC91AC63CDF245B6FDCDFE08391BFF10F779D788203DB1272C60"
++  },
++  {
++    "VendorTag": "com.oplus.feature.aicomposition.inspiration.aes.key",
++    "Type": "String",
++    "Count": "1",
++    "Value": "5ZAQ0+UKt/L/0FTmN516mGa4JlKyhWIs2YIRiRoB/c8="
+   }
+ ]
+\ No newline at end of file

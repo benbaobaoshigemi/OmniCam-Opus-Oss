@@ -1,0 +1,20 @@
+--- a/module/payload/unlock25mp/lighthousewide
++++ b/module/payload/unlock25mp/lighthousewide
+@@ -325,7 +325,7 @@
+   "Key": "HIGHT_PIXEL_25M_ISO_TRRIGGER",
+   "Type": "Int32",
+   "Count": "1",
+-  "Value": "1600",
++  "Value": "999999",
+   "Comment": "ISO trrigger for 25M"
+ },
+ 
+@@ -333,7 +333,7 @@
+   "Key": "HIGHT_PIXEL_25M_LUX_TRRIGGER",
+   "Type": "Int32",
+   "Count": "1",
+-  "Value": "380",
++  "Value": "9999",
+   "Comment": "lux trrigger for 25M"
+ },
+ 

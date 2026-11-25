@@ -1,0 +1,24 @@
+--- a/module/payload/face200m/unlock25mp/oplus_camera_preview_decision_config.json
++++ b/module/payload/face200m/unlock25mp/oplus_camera_preview_decision_config.json
+@@ -3253,10 +3253,6 @@
+                 "eq": [
+                   "isHighPixel200MScene",
+                   true
+-                ],
+-                "eq1": [
+-                  "isBigFaceScene",
+-                  true
+                 ]
+               },
+               "eq": [
+@@ -3312,10 +3308,6 @@
+                 ],
+                 "eq1": [
+                   "isHighPixel200MScene",
+-                  true
+-                ],
+-                "eq2": [
+-                  "isBigFaceScene",
+                   true
+                 ]
+               },

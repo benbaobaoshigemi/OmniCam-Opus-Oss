@@ -1,0 +1,826 @@
+{
+  "sources": {
+    "pma110": "OPPO Find X9 Ultra (PMA110), system 17.0.1.200",
+    "pmw110": "OPPO Find X10 (PMW110), PMW110_11.A.01_001_202609190059",
+    "rmx5200": "realme RMX5200, RMX5200_11_A.01",
+    "x8u": "OPPO Find X8 Ultra",
+    "cph2745": "OPPO CPH2745",
+    "xiaomi17u": "Xiaomi 17 Ultra",
+    "ndk": "Android NDK, path inside the NDK after the version",
+    "module": "another file of this module, rebuilt first"
+  },
+  "files": [
+    {
+      "out": "module/payload/algo/libAlgoInterface.so",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/lib64/libAlgoInterface.so",
+      "made_by": "tools/patch_algo_interface.py",
+      "sha256": "dfd1d312673e30bdd86857b054c95e9b0d76618c428ca759bfda48a51a5ee4be",
+      "stock_sha256": "e7d6ff3aff5147bb4feb31d31f35a2b0699118949800390fd76f1895442846c6"
+    },
+    {
+      "out": "module/payload/algo/libmsnativefilter.so",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/lib64/libmsnativefilter.so",
+      "made_by": "tools/patch_msnativefilter.py",
+      "sha256": "9850a76f3d78f4fbd8a0a17ac348d688d7907094eba776f02ed918ddf0ea07ab",
+      "stock_sha256": "b97df91e697f6689b4c49800d4ba1461829fd2ba6de9cb63885b65b1891e7ecf"
+    },
+    {
+      "out": "module/payload/audio_policy_volumes.xml",
+      "kind": "text",
+      "from": "pma110:/odm/etc/audio/audio_policy_volumes.xml",
+      "made_by": "tools/patch_audio_volumes.py",
+      "sha256": "cb77cdf3496a151e2e1bc495eb488dadd45c5506754bfabcf36bc150064b7140",
+      "stock_sha256": "abd499cb62656209b7b6f7c684b2b827e3d8f226850d9773f7a9d3ed1e39b3b9"
+    },
+    {
+      "out": "module/payload/camera_unit_config",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/camera_unit_config",
+      "sha256": "62bbfd05345590aff707fbe0d1d633fbd75e6944d7a0336e0f1d11e80427b9d9",
+      "stock_sha256": "c602e60fb1fee322a4a1398388eb9109c2027ed0e08cf07fd0dc57d3038d5198",
+      "reformat": {
+        "indent": 2,
+        "newline": true
+      }
+    },
+    {
+      "out": "module/payload/camera_unit_feature_config.protobuf",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/etc/camera/config/camera_unit_feature_config.protobuf",
+      "sha256": "6bfd582a7b9b95df00867b477e6aea8e218b0d69a26e1fb81d1cdcf11b1ba054",
+      "stock_sha256": "99ac0d65d4e792ccc9680122ad5add4750c0e8f67457c21a7a0980338476b019"
+    },
+    {
+      "out": "module/payload/face200m/oplus_camera_preview_decision_config.json",
+      "kind": "text",
+      "from": "module:module/payload/oplus_camera_preview_decision_config.json",
+      "made_by": "tools/patch_200m_face.py",
+      "sha256": "c4c76bfaaf113a99c70208b0b6b75789dd56d7a5e089306e789579fc3bee96d0",
+      "stock_sha256": "40a7edb2c5cbc951f98f7fd1fb6fc67342459b91bcb2146ee88ca616ce511f80",
+      "reformat": {
+        "indent": 2,
+        "newline": true
+      }
+    },
+    {
+      "out": "module/payload/face200m/unlock25mp/oplus_camera_preview_decision_config.json",
+      "kind": "text",
+      "from": "module:module/payload/unlock25mp/oplus_camera_preview_decision_config.json",
+      "made_by": "tools/patch_200m_face.py",
+      "sha256": "dc699e52fe8b2c297dad69729d7e5276278dfccd71ef97ad2d1639318af22bdb",
+      "stock_sha256": "957fb5f061c2f0dfab0ad305779060b24db60aa04d5d97c55b2068fc5af785ba"
+    },
+    {
+      "out": "module/payload/gamma/gamma_preview_hdr_conf.json",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/gamma_photo_hdr_conf.json",
+      "sha256": "b18cb05b573d6044bbc05ecb4fa0e219dccb453812a9aa4e12a4bce26b0d7226",
+      "stock_sha256": "b18cb05b573d6044bbc05ecb4fa0e219dccb453812a9aa4e12a4bce26b0d7226"
+    },
+    {
+      "out": "module/payload/gamma/gamma_preview_sdr_conf.json",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/gamma_preview_sdr_conf.json",
+      "sha256": "6efeba1fa017a5a06f2ad9ad8f4871c2f341554106c1ce7efd2b9693754c482a",
+      "stock_sha256": "6efeba1fa017a5a06f2ad9ad8f4871c2f341554106c1ce7efd2b9693754c482a"
+    },
+    {
+      "out": "module/payload/gamma/gamma_quick_sdr_conf.json",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/gamma_photo_sdr_conf.json",
+      "sha256": "6efeba1fa017a5a06f2ad9ad8f4871c2f341554106c1ce7efd2b9693754c482a",
+      "stock_sha256": "6efeba1fa017a5a06f2ad9ad8f4871c2f341554106c1ce7efd2b9693754c482a"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut0",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut0",
+      "sha256": "7c9112b938c351da01a1803784bafb4b183c9c2f08b848e7636ee9e5c33af76e",
+      "stock_sha256": "7c9112b938c351da01a1803784bafb4b183c9c2f08b848e7636ee9e5c33af76e"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut1",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut1",
+      "sha256": "ec87c6971ac5c9ba2294cd11a5f3d1ca70ef5524aa42e85e33203307c9b72cfb",
+      "stock_sha256": "ec87c6971ac5c9ba2294cd11a5f3d1ca70ef5524aa42e85e33203307c9b72cfb"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut2",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut2",
+      "sha256": "0830bb7ccad8cbf2efd453f4e96930039ca899139060fe511cfaf638e42d997f",
+      "stock_sha256": "0830bb7ccad8cbf2efd453f4e96930039ca899139060fe511cfaf638e42d997f"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut3",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut3",
+      "sha256": "13dfa19693af807d69ee8d271cbf459df178889aa4b86ac07582f0bee8f71027",
+      "stock_sha256": "13dfa19693af807d69ee8d271cbf459df178889aa4b86ac07582f0bee8f71027"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut4",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut4",
+      "sha256": "d8b5f1473a7fa735596ef9c116ffd283f14462d89e231d0657526f799d1cc406",
+      "stock_sha256": "d8b5f1473a7fa735596ef9c116ffd283f14462d89e231d0657526f799d1cc406"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut5",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut5",
+      "sha256": "aa50fb7de0de978a61e13b333590ff3d393264fd298fe78958cb28a13d5a6c69",
+      "stock_sha256": "aa50fb7de0de978a61e13b333590ff3d393264fd298fe78958cb28a13d5a6c69"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut6",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut6",
+      "sha256": "05ac75e6cb4f042522a81044599fc5e1973915c9866ea2757816819eb86dcf83",
+      "stock_sha256": "05ac75e6cb4f042522a81044599fc5e1973915c9866ea2757816819eb86dcf83"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut7",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut7",
+      "sha256": "97da071560314f5e0ab79a088d3131486973f74ec94cf02ce01789e47b806777",
+      "stock_sha256": "97da071560314f5e0ab79a088d3131486973f74ec94cf02ce01789e47b806777"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM16Lut8",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM16Lut8",
+      "sha256": "a2ec9698160e08933dfdb4d07fd052b50aeb1c4fccaaabe8453ba4e57be6fb94",
+      "stock_sha256": "a2ec9698160e08933dfdb4d07fd052b50aeb1c4fccaaabe8453ba4e57be6fb94"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut0",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut0",
+      "sha256": "9df62501c915268afeedb698ba8609a0886b1fc31493025fd97939650c32eb48",
+      "stock_sha256": "9df62501c915268afeedb698ba8609a0886b1fc31493025fd97939650c32eb48"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut1",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut1",
+      "sha256": "a914e66d28bdb2834c6d30a5689b3044f056e48738c1beca089b9251693ae3c4",
+      "stock_sha256": "a914e66d28bdb2834c6d30a5689b3044f056e48738c1beca089b9251693ae3c4"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut2",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut2",
+      "sha256": "0aade5de176badda9962b44f0c2d6440f713d58818486d09b7c748a3f115434f",
+      "stock_sha256": "0aade5de176badda9962b44f0c2d6440f713d58818486d09b7c748a3f115434f"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut3",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut3",
+      "sha256": "5afd1d33e31a1dec6abcf41473e80a537fc199cc91626f1df46662622dc8c351",
+      "stock_sha256": "5afd1d33e31a1dec6abcf41473e80a537fc199cc91626f1df46662622dc8c351"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut4",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut4",
+      "sha256": "3c6483fddaf2ebc2cf1aa94aa855133acf8950e7565ffadf109a73e47a9c5456",
+      "stock_sha256": "3c6483fddaf2ebc2cf1aa94aa855133acf8950e7565ffadf109a73e47a9c5456"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut5",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut5",
+      "sha256": "8363b54c55bde1d57fb893bf553d4ac85731e2ec7099cb91d0f77fb676cdaa24",
+      "stock_sha256": "8363b54c55bde1d57fb893bf553d4ac85731e2ec7099cb91d0f77fb676cdaa24"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut6",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut6",
+      "sha256": "5295e46560b3f013d7766d32a8058b2a28506267273c92f08b4a7d2f14e04ee6",
+      "stock_sha256": "5295e46560b3f013d7766d32a8058b2a28506267273c92f08b4a7d2f14e04ee6"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut7",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut7",
+      "sha256": "8c52c79d0f9c292dfdad6208bff3e0a97c58536c38d8968ab7ad717d1f5a5947",
+      "stock_sha256": "8c52c79d0f9c292dfdad6208bff3e0a97c58536c38d8968ab7ad717d1f5a5947"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/CWCM32Lut8",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/CWCM32Lut8",
+      "sha256": "707a169e6dc1c2abf165f8181f6502c8bc4c68d7bd348f3223c01a2cd871e472",
+      "stock_sha256": "707a169e6dc1c2abf165f8181f6502c8bc4c68d7bd348f3223c01a2cd871e472"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut0",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut0",
+      "sha256": "f5df319260f575dfa4a8df22d64c9821ca1d2f88a212d7faa78b5ef072290c50",
+      "stock_sha256": "f5df319260f575dfa4a8df22d64c9821ca1d2f88a212d7faa78b5ef072290c50"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut1",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut1",
+      "sha256": "bb51352acb7a342419091e060745613571c6ecde8a8b15288cc878570f70b920",
+      "stock_sha256": "bb51352acb7a342419091e060745613571c6ecde8a8b15288cc878570f70b920"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut2",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut2",
+      "sha256": "47b84429bcd01cfb7e78c6aa4f4121400288357266ded9fc32b54a17287f7f7c",
+      "stock_sha256": "47b84429bcd01cfb7e78c6aa4f4121400288357266ded9fc32b54a17287f7f7c"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut3",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut3",
+      "sha256": "1cd38338819b56db2bc0bc8e5af25430825fb14f78b059370357e9c2558baa26",
+      "stock_sha256": "1cd38338819b56db2bc0bc8e5af25430825fb14f78b059370357e9c2558baa26"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut4",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut4",
+      "sha256": "d8b5f1473a7fa735596ef9c116ffd283f14462d89e231d0657526f799d1cc406",
+      "stock_sha256": "d8b5f1473a7fa735596ef9c116ffd283f14462d89e231d0657526f799d1cc406"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut5",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut5",
+      "sha256": "8aa419d87b36fc863e4603a288b796f8014ddbe8a01eb8373986018e41ee2226",
+      "stock_sha256": "8aa419d87b36fc863e4603a288b796f8014ddbe8a01eb8373986018e41ee2226"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut6",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut6",
+      "sha256": "d431eccfb66dc1dfe53fcf3a07b6ce4f853f9f2a516d44fa0a07d1bf0db848be",
+      "stock_sha256": "d431eccfb66dc1dfe53fcf3a07b6ce4f853f9f2a516d44fa0a07d1bf0db848be"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut7",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut7",
+      "sha256": "5db9a166ce729c34ddac523b01b830d86dfd8acf766d44a668102a441d146ecc",
+      "stock_sha256": "5db9a166ce729c34ddac523b01b830d86dfd8acf766d44a668102a441d146ecc"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC16Lut8",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC16Lut8",
+      "sha256": "c74426c7238158ef2babdf256fb8f541ae94c8dc36af86633e3bf3c6964d4133",
+      "stock_sha256": "c74426c7238158ef2babdf256fb8f541ae94c8dc36af86633e3bf3c6964d4133"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut0",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut0",
+      "sha256": "88805564e068f58aaec20d2e565a31a25fdc43e59e8e0da595b4e1aef7653da3",
+      "stock_sha256": "88805564e068f58aaec20d2e565a31a25fdc43e59e8e0da595b4e1aef7653da3"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut1",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut1",
+      "sha256": "856643421d18348cd05ef127f35e8bdf8d08311ff9cbb54a10e03124264ac7b0",
+      "stock_sha256": "856643421d18348cd05ef127f35e8bdf8d08311ff9cbb54a10e03124264ac7b0"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut2",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut2",
+      "sha256": "e7160a748f0d504051a43c2a5cc95b23cda2230276fb91b7be74a56a1948c2f4",
+      "stock_sha256": "e7160a748f0d504051a43c2a5cc95b23cda2230276fb91b7be74a56a1948c2f4"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut3",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut3",
+      "sha256": "0ae236286a27c76a31b26fd63125bfc3ba8fd9a61bcc993eb9f9481a14f366fa",
+      "stock_sha256": "0ae236286a27c76a31b26fd63125bfc3ba8fd9a61bcc993eb9f9481a14f366fa"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut4",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut4",
+      "sha256": "3c6483fddaf2ebc2cf1aa94aa855133acf8950e7565ffadf109a73e47a9c5456",
+      "stock_sha256": "3c6483fddaf2ebc2cf1aa94aa855133acf8950e7565ffadf109a73e47a9c5456"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut5",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut5",
+      "sha256": "9dfc34d7c7b6bfcdbc84cde86d99d4eb77768867edf12e9a7649c0a9bd301fad",
+      "stock_sha256": "9dfc34d7c7b6bfcdbc84cde86d99d4eb77768867edf12e9a7649c0a9bd301fad"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut6",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut6",
+      "sha256": "0984b5c3c394725f1c1e9710169a978cd48de4ee4b6294db69f8eeae2b125e6d",
+      "stock_sha256": "0984b5c3c394725f1c1e9710169a978cd48de4ee4b6294db69f8eeae2b125e6d"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut7",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut7",
+      "sha256": "3aabd7625665948ecdfc98f0010d860fd3aa0295b26443798a0aa340b829859f",
+      "stock_sha256": "3aabd7625665948ecdfc98f0010d860fd3aa0295b26443798a0aa340b829859f"
+    },
+    {
+      "out": "module/payload/gr_adjustment_lmt/SC32Lut8",
+      "kind": "copy",
+      "from": "rmx5200:/odm/etc/camera/basictone/lmt/SC32Lut8",
+      "sha256": "eefbfbad0b4e08cdd3928a3f047647811d62163f2279ecff3f5656e56a7084ce",
+      "stock_sha256": "eefbfbad0b4e08cdd3928a3f047647811d62163f2279ecff3f5656e56a7084ce"
+    },
+    {
+      "out": "module/payload/isp/com.qti.tuned.lighthousemain.bin",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/lib64/camera/com.qti.tuned.lighthousemain.bin",
+      "made_by": "tools/opengate/build_opengate.py",
+      "sha256": "d3a86a9d8e07c92ab650bce2618f6af5b041511c2670ec2d345e8e88a3364b45",
+      "stock_sha256": "5bfc94c544d4693549f8c6aef0b55c2a218e13f077fbd5d0b19133001087c982"
+    },
+    {
+      "out": "module/payload/isp/com.qti.tuned.lighthousetele.bin",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/lib64/camera/com.qti.tuned.lighthousetele.bin",
+      "made_by": "tools/opengate/build_opengate.py",
+      "sha256": "7aeb55c480a480a17382d16acfaea3a4b2e52e69f426762823e6344e81868c87",
+      "stock_sha256": "5e1e98b9972d5b43469443a4eaec091521343a02bfb806b0339f8d32ffbc9dcd"
+    },
+    {
+      "out": "module/payload/isp/com.qti.tuned.lighthousewide.bin",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/lib64/camera/com.qti.tuned.lighthousewide.bin",
+      "made_by": "tools/opengate/build_opengate.py",
+      "sha256": "652aee674c2c7141561538f2ade07972df13b6023099f39a8121caded330a8a9",
+      "stock_sha256": "8ba98b7ec360972e3ffe8b7b6fee033e7ba45efd004233585b205d11a9f2bddb"
+    },
+    {
+      "out": "module/payload/master_color/looks/x8u/LMTLut0",
+      "kind": "copy",
+      "from": "x8u:/odm/etc/camera/basictone/lmt/LMTLut0",
+      "sha256": "3915aacd01c23b858d4ac30c81aa631a8f0cd63e7b553ce0054516a5cae86dea",
+      "stock_sha256": "3915aacd01c23b858d4ac30c81aa631a8f0cd63e7b553ce0054516a5cae86dea"
+    },
+    {
+      "out": "module/payload/master_color/looks/x8u/LMTLut1",
+      "kind": "copy",
+      "from": "x8u:/odm/etc/camera/basictone/lmt/LMTLut1",
+      "sha256": "768ac262b2f8982c41921896cd8b8ad8c32dcb744cac0728c83f9876307d5147",
+      "stock_sha256": "768ac262b2f8982c41921896cd8b8ad8c32dcb744cac0728c83f9876307d5147"
+    },
+    {
+      "out": "module/payload/master_color/looks/x8u/LMTLut2",
+      "kind": "copy",
+      "from": "x8u:/odm/etc/camera/basictone/lmt/LMTLut2",
+      "sha256": "0b362583f0592143939d022a5c207c5b99c333bd25d13dad5a25420dc83a99d8",
+      "stock_sha256": "0b362583f0592143939d022a5c207c5b99c333bd25d13dad5a25420dc83a99d8"
+    },
+    {
+      "out": "module/payload/master_color/looks/x8u/LMTLut3",
+      "kind": "copy",
+      "from": "x8u:/odm/etc/camera/basictone/lmt/LMTLut3",
+      "sha256": "0ee1767f72a86696b41380e63b6b92c1a6b2bce4119fbb746b74ddfa0c757bfe",
+      "stock_sha256": "0ee1767f72a86696b41380e63b6b92c1a6b2bce4119fbb746b74ddfa0c757bfe"
+    },
+    {
+      "out": "module/payload/monopan/leica_filter_param_m3.bin",
+      "kind": "copy",
+      "from": "xiaomi17u:/odm/etc/camera/leica_filter_param_m3.bin",
+      "sha256": "6e9217ee8c59872a3d700614681c30742df01d9bc9b44b7f2a170eeaab68052b",
+      "stock_sha256": "6e9217ee8c59872a3d700614681c30742df01d9bc9b44b7f2a170eeaab68052b"
+    },
+    {
+      "out": "module/payload/monopan/libmialgo_monopan.so",
+      "kind": "rename",
+      "from": "xiaomi17u:/odm/lib64/libmialgo_monopan.so",
+      "rename": [
+        "libc++_shared.so",
+        "libmpancxx_sh.so"
+      ],
+      "sha256": "8f1b7248900521662cddfea56d14cf65c39cf2a48087fba49a15619800169d2a",
+      "stock_sha256": "bc3fc1dc6797f1bef73fc4686ed11004f5a05d26dc04690b5c4fd91fcf38ce45"
+    },
+    {
+      "out": "module/payload/monopan/libmpancxx_sh.so",
+      "kind": "rename",
+      "from": "ndk:/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+      "rename": [
+        "libc++_shared.so",
+        "libmpancxx_sh.so"
+      ],
+      "sha256": "f775a276bd4d4746ccb850d216e43b4d731e04d992a9cf04f2ec77d6f438e800",
+      "stock_sha256": "ab4e6c71b96b851de45a8a9bd86369e7dbc2130a44b3b4520564be94847910f2"
+    },
+    {
+      "out": "module/payload/monopan/mialgo_monopan_cl.bin",
+      "kind": "copy",
+      "from": "xiaomi17u:/odm/etc/camera/mialgo_monopan_cl.bin",
+      "sha256": "aab86fe755d1d8a69ce3829fc23008f7858b31d2c579323d0c0aa61cb8d9f48e",
+      "stock_sha256": "aab86fe755d1d8a69ce3829fc23008f7858b31d2c579323d0c0aa61cb8d9f48e"
+    },
+    {
+      "out": "module/payload/monopan/monopan_helper",
+      "kind": "build",
+      "built_by": "app/src/main/cpp/CMakeLists.txt (monopan_helper)",
+      "sha256": "0411d44805b50a1ed0f9a9b312f991bfdf6c56c8747292c8de2da4bf5af22433"
+    },
+    {
+      "out": "module/payload/og/camera.oemlayer.uilayer.so",
+      "kind": "bsdiff",
+      "from": "pma110:/odm/lib64/camera.oemlayer.uilayer.so",
+      "made_by": "tools/opengate/uilayer/build_uilayer.py",
+      "sha256": "150bcadf479504b5b283d559e801ce21f8148670737fb37c1405ec86fa5dea88",
+      "stock_sha256": "7a01e265f34ef5d3256b8541bb17b25cde4e1d3a1125f45bd0fa74b4abe3ba9f"
+    },
+    {
+      "out": "module/payload/oplus_camera_algo_switch_config",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/oplus_camera_algo_switch_config",
+      "sha256": "e2a0578f31bdd23ed64d8332c6249b4435b5f900831f32cc3b7d48cb863a2980",
+      "stock_sha256": "281af5f9650d881160bf59e2f7377e2b4da76dc7e6945b1c5e8389a8745d931a",
+      "decrypt": true,
+      "reformat": {
+        "indent": 2,
+        "newline": false
+      }
+    },
+    {
+      "out": "module/payload/oplus_camera_aps_config",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/oplus_camera_aps_config",
+      "sha256": "bb5b736300942b89400772135a88803e005ff5a6a3afd00a60db94a67cc0b598",
+      "stock_sha256": "2301933b114b412ec3aa9e9a31595e39c0d019f4610f257c13975f76f5d64d0d",
+      "decrypt": true,
+      "reformat": {
+        "indent": 2,
+        "newline": false
+      }
+    },
+    {
+      "out": "module/payload/oplus_camera_config",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/oplus_camera_config",
+      "sha256": "a02607e2ab117cd95c8becb800e97d32921628be9c06a399855c51cec950a3eb",
+      "stock_sha256": "b5022a756464d6db7fd8660268253e3ddc0108d99b947df8fa4ace56f28cc5a1",
+      "decrypt": true,
+      "reformat": {
+        "indent": 2,
+        "newline": false
+      }
+    },
+    {
+      "out": "module/payload/oplus_camera_preview_decision_config.json",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/oplus_camera_preview_decision_config.json",
+      "sha256": "40a7edb2c5cbc951f98f7fd1fb6fc67342459b91bcb2146ee88ca616ce511f80",
+      "stock_sha256": "a1f8a65251716922a6561138fdbc0431554fc0b15d942abf236fd6bec51e80f6",
+      "decrypt": true
+    },
+    {
+      "out": "module/payload/setting_Retro/SimTool_Master.ini",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/basictone/setting/SimTool_Master.ini",
+      "sha256": "6af33f551609bbe1724d259e659eb588c7a258b3692c7b7c60d6f95a8c80ee8f",
+      "stock_sha256": "5172115204586d27e021acd16c92b6d6fca865b44dc7b39709337fb714d72748"
+    },
+    {
+      "out": "module/payload/setting_Retro/SimTool_Photo_Master.ini",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/basictone/setting/SimTool_Photo_Master.ini",
+      "sha256": "1fdea6b25ecbf450048927effb4ce9b4d0c524ae2de26ae343e3d3528a6af383",
+      "stock_sha256": "60ac5cd9dfc299f57794c82d5557f529f188e02182e24f6c15d9e3e90f86a28f"
+    },
+    {
+      "out": "module/payload/unlock25mp/lighthousemain",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/lighthousemain",
+      "made_by": "tools/patch_25mp.py",
+      "sha256": "862b2d8b0cfb5156e78d9cceb28f72c17314c52b3a1402b29ca9e52334898987",
+      "stock_sha256": "cea33803fe6b77c2cbaff29487bff989091aeca1465c7a4f9c74e1865b5a2575"
+    },
+    {
+      "out": "module/payload/unlock25mp/lighthousetele",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/lighthousetele",
+      "made_by": "tools/patch_25mp.py",
+      "sha256": "d9032a9d0f75a5ec2bf0f0c11aa91212b5a234a6fb7ba8f15ba6c82f188f6496",
+      "stock_sha256": "48ae7592a513341c0d4abc92d59f4b4fd886bfd03ae55838bce76e8e5b7ddc26"
+    },
+    {
+      "out": "module/payload/unlock25mp/lighthouseultratele",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/lighthouseultratele",
+      "made_by": "tools/patch_25mp.py",
+      "sha256": "aa868e885776996e678e442c702a36c9b50affcb190aca7430ce33d2babe4a7a",
+      "stock_sha256": "4fe7d9981b38e81eb493bb46f99b3a330cdcddc7b4d350aebc34c84731b104d2"
+    },
+    {
+      "out": "module/payload/unlock25mp/lighthousewide",
+      "kind": "text",
+      "from": "pma110:/odm/etc/camera/config/lighthousewide",
+      "made_by": "tools/patch_25mp.py",
+      "sha256": "41b7e29e46dd8b887693e201ad56ef287320e77daae746d9444ba42193496238",
+      "stock_sha256": "3e3f820b731247b7d9f707760c94aced9fe5b20abf2419fb8260bd303f773994"
+    },
+    {
+      "out": "module/payload/unlock25mp/oplus_camera_aps_config",
+      "kind": "text",
+      "from": "module:module/payload/oplus_camera_aps_config",
+      "made_by": "tools/patch_25mp.py",
+      "sha256": "9eca4bcdb732e4eb353fc21f42deeee70246a96ca2c05f005b30ef82585d4c52",
+      "stock_sha256": "bb5b736300942b89400772135a88803e005ff5a6a3afd00a60db94a67cc0b598"
+    },
+    {
+      "out": "module/payload/unlock25mp/oplus_camera_preview_decision_config.json",
+      "kind": "text",
+      "from": "module:module/payload/oplus_camera_preview_decision_config.json",
+      "made_by": "tools/patch_25mp.py",
+      "sha256": "957fb5f061c2f0dfab0ad305779060b24db60aa04d5d97c55b2068fc5af785ba",
+      "stock_sha256": "40a7edb2c5cbc951f98f7fd1fb6fc67342459b91bcb2146ee88ca616ce511f80",
+      "reformat": {
+        "indent": 2,
+        "newline": true
+      }
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/LMTPhotoLut0",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/LMTPhotoLut0",
+      "sha256": "3915aacd01c23b858d4ac30c81aa631a8f0cd63e7b553ce0054516a5cae86dea",
+      "stock_sha256": "3915aacd01c23b858d4ac30c81aa631a8f0cd63e7b553ce0054516a5cae86dea"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/LMTPhotoLut1",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/LMTPhotoLut1",
+      "sha256": "768ac262b2f8982c41921896cd8b8ad8c32dcb744cac0728c83f9876307d5147",
+      "stock_sha256": "768ac262b2f8982c41921896cd8b8ad8c32dcb744cac0728c83f9876307d5147"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/LMTPhotoLut2",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/LMTPhotoLut2",
+      "sha256": "0b362583f0592143939d022a5c207c5b99c333bd25d13dad5a25420dc83a99d8",
+      "stock_sha256": "0b362583f0592143939d022a5c207c5b99c333bd25d13dad5a25420dc83a99d8"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/LMTPhotoLut3",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/LMTPhotoLut3",
+      "sha256": "0ee1767f72a86696b41380e63b6b92c1a6b2bce4119fbb746b74ddfa0c757bfe",
+      "stock_sha256": "0ee1767f72a86696b41380e63b6b92c1a6b2bce4119fbb746b74ddfa0c757bfe"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut0",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut0",
+      "sha256": "e036880141d41fe6d6a873320c890ad6ed08899bad3b24507b368c5472f21eec",
+      "stock_sha256": "e036880141d41fe6d6a873320c890ad6ed08899bad3b24507b368c5472f21eec"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut1",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut1",
+      "sha256": "d955df80d7f152e3a56420a3e4fcb072f127cb7eb19b3662d65237ee603a85d7",
+      "stock_sha256": "d955df80d7f152e3a56420a3e4fcb072f127cb7eb19b3662d65237ee603a85d7"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut2",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut2",
+      "sha256": "66f0ff46c441a718487d9e13316c6683d5a4e09916c0df6a3528e9bea4880e33",
+      "stock_sha256": "66f0ff46c441a718487d9e13316c6683d5a4e09916c0df6a3528e9bea4880e33"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut3",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut3",
+      "sha256": "ffb402d8cb0bbb519a1af86bda5f72bb5ffb8091baec102d55a49e119ab9bbbc",
+      "stock_sha256": "ffb402d8cb0bbb519a1af86bda5f72bb5ffb8091baec102d55a49e119ab9bbbc"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut4",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut4",
+      "sha256": "8d82f11f30254d87d3525f24a4b1b300cabaae94bbdf3f2d9ea24f2ffce3bb06",
+      "stock_sha256": "8d82f11f30254d87d3525f24a4b1b300cabaae94bbdf3f2d9ea24f2ffce3bb06"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut5",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut5",
+      "sha256": "40d31c01773331da4f6651e1e1d522300c43108e67a59ee7e3d3cdc6e823ad58",
+      "stock_sha256": "40d31c01773331da4f6651e1e1d522300c43108e67a59ee7e3d3cdc6e823ad58"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut6",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut6",
+      "sha256": "a702467c68f65dedf19ed40a8f57d90f1972c52b8c04c193c281e5fca198cee3",
+      "stock_sha256": "a702467c68f65dedf19ed40a8f57d90f1972c52b8c04c193c281e5fca198cee3"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut7",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut7",
+      "sha256": "6cb6c16de69ffac9f08c4606203a84dbacccf359edf81892f2756e9ee7859dd0",
+      "stock_sha256": "6cb6c16de69ffac9f08c4606203a84dbacccf359edf81892f2756e9ee7859dd0"
+    },
+    {
+      "out": "module/payload/x10_basictone/lmt/SCLut8",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/lmt/SCLut8",
+      "sha256": "fdbb8c608aa3946ad6d481cf43cede7e6773dd54b439f00a0644320a0166b7e3",
+      "stock_sha256": "fdbb8c608aa3946ad6d481cf43cede7e6773dd54b439f00a0644320a0166b7e3"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut0",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut0",
+      "sha256": "694f087ef1d1fa32723f84a932cd8e32ad36800f96a7cd25ad6365256e52da78",
+      "stock_sha256": "694f087ef1d1fa32723f84a932cd8e32ad36800f96a7cd25ad6365256e52da78"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut1",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut1",
+      "sha256": "ad281da87cc9ff59422fdc0107a364abf2102b336117f3f24f6d80967a17a8aa",
+      "stock_sha256": "ad281da87cc9ff59422fdc0107a364abf2102b336117f3f24f6d80967a17a8aa"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut2",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut2",
+      "sha256": "8da8aca255cb6895ea9fbf67db6e738d2dc7144dffba0d65432bbbceafbb0a42",
+      "stock_sha256": "8da8aca255cb6895ea9fbf67db6e738d2dc7144dffba0d65432bbbceafbb0a42"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut3",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut3",
+      "sha256": "b72680c2af5f162837390a354e2ce71586b81be8f729dc6102a0a7cb9ea657da",
+      "stock_sha256": "b72680c2af5f162837390a354e2ce71586b81be8f729dc6102a0a7cb9ea657da"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut4",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut4",
+      "sha256": "45c26b247cc62abd4ab9529160baeab3c068d1e2d192d87867907462812423f3",
+      "stock_sha256": "45c26b247cc62abd4ab9529160baeab3c068d1e2d192d87867907462812423f3"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut5",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut5",
+      "sha256": "fd4d798a6840b922d0e7bfaa9c56bb41d258ad8dccb37f3b576c8bb76bc6a611",
+      "stock_sha256": "fd4d798a6840b922d0e7bfaa9c56bb41d258ad8dccb37f3b576c8bb76bc6a611"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut6",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut6",
+      "sha256": "f3a7739006e16bf9d7e074d594eadc821b612f6e13f121cd0b1d86e34249e5f5",
+      "stock_sha256": "f3a7739006e16bf9d7e074d594eadc821b612f6e13f121cd0b1d86e34249e5f5"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut7",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut7",
+      "sha256": "7265cf25cfd3ca7e75cfe25e19eca377ce69d77f8289176aed622e919c0b4f78",
+      "stock_sha256": "7265cf25cfd3ca7e75cfe25e19eca377ce69d77f8289176aed622e919c0b4f78"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/HDR/SC16Lut8",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/HDR/SC16Lut8",
+      "sha256": "38496c97d6419b4f77d9e50231062f45002db632e7f67ce177e7dab89577b6d0",
+      "stock_sha256": "38496c97d6419b4f77d9e50231062f45002db632e7f67ce177e7dab89577b6d0"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut0",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut0",
+      "sha256": "694f087ef1d1fa32723f84a932cd8e32ad36800f96a7cd25ad6365256e52da78",
+      "stock_sha256": "694f087ef1d1fa32723f84a932cd8e32ad36800f96a7cd25ad6365256e52da78"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut1",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut1",
+      "sha256": "ad281da87cc9ff59422fdc0107a364abf2102b336117f3f24f6d80967a17a8aa",
+      "stock_sha256": "ad281da87cc9ff59422fdc0107a364abf2102b336117f3f24f6d80967a17a8aa"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut2",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut2",
+      "sha256": "8da8aca255cb6895ea9fbf67db6e738d2dc7144dffba0d65432bbbceafbb0a42",
+      "stock_sha256": "8da8aca255cb6895ea9fbf67db6e738d2dc7144dffba0d65432bbbceafbb0a42"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut3",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut3",
+      "sha256": "b72680c2af5f162837390a354e2ce71586b81be8f729dc6102a0a7cb9ea657da",
+      "stock_sha256": "b72680c2af5f162837390a354e2ce71586b81be8f729dc6102a0a7cb9ea657da"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut4",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut4",
+      "sha256": "45c26b247cc62abd4ab9529160baeab3c068d1e2d192d87867907462812423f3",
+      "stock_sha256": "45c26b247cc62abd4ab9529160baeab3c068d1e2d192d87867907462812423f3"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut5",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut5",
+      "sha256": "fd4d798a6840b922d0e7bfaa9c56bb41d258ad8dccb37f3b576c8bb76bc6a611",
+      "stock_sha256": "fd4d798a6840b922d0e7bfaa9c56bb41d258ad8dccb37f3b576c8bb76bc6a611"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut6",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut6",
+      "sha256": "f3a7739006e16bf9d7e074d594eadc821b612f6e13f121cd0b1d86e34249e5f5",
+      "stock_sha256": "f3a7739006e16bf9d7e074d594eadc821b612f6e13f121cd0b1d86e34249e5f5"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut7",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut7",
+      "sha256": "7265cf25cfd3ca7e75cfe25e19eca377ce69d77f8289176aed622e919c0b4f78",
+      "stock_sha256": "7265cf25cfd3ca7e75cfe25e19eca377ce69d77f8289176aed622e919c0b4f78"
+    },
+    {
+      "out": "module/payload/x10_basictone/palette/SDR/SC16Lut8",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/palette/SDR/SC16Lut8",
+      "sha256": "38496c97d6419b4f77d9e50231062f45002db632e7f67ce177e7dab89577b6d0",
+      "stock_sha256": "38496c97d6419b4f77d9e50231062f45002db632e7f67ce177e7dab89577b6d0"
+    },
+    {
+      "out": "module/payload/x10_basictone/setting/SimTool_Palette_Photo_Night.ini",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/setting/SimTool_Palette_Photo_Night.ini",
+      "sha256": "554e12a781fa2cc1ad2db8b102b398d41d23b93be6ec1fafc103ab4fb832c4c9",
+      "stock_sha256": "554e12a781fa2cc1ad2db8b102b398d41d23b93be6ec1fafc103ab4fb832c4c9"
+    },
+    {
+      "out": "module/payload/x10_basictone/setting/SimTool_Palette_Photo_Normal.ini",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/setting/SimTool_Palette_Photo_Normal.ini",
+      "sha256": "554e12a781fa2cc1ad2db8b102b398d41d23b93be6ec1fafc103ab4fb832c4c9",
+      "stock_sha256": "554e12a781fa2cc1ad2db8b102b398d41d23b93be6ec1fafc103ab4fb832c4c9"
+    },
+    {
+      "out": "module/payload/x10_basictone/setting/SimTool_Palette_Photo_Portrait.ini",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/setting/SimTool_Palette_Photo_Portrait.ini",
+      "sha256": "554e12a781fa2cc1ad2db8b102b398d41d23b93be6ec1fafc103ab4fb832c4c9",
+      "stock_sha256": "554e12a781fa2cc1ad2db8b102b398d41d23b93be6ec1fafc103ab4fb832c4c9"
+    },
+    {
+      "out": "module/payload/x10_basictone/setting/SimTool_Preview_Palette_Normal.ini",
+      "kind": "copy",
+      "from": "pmw110:/odm/etc/camera/basictone/setting/SimTool_Preview_Palette_Normal.ini",
+      "sha256": "bdd2965393a3438961a72d1376cef0ff4fe3f42a1c60b4daa64d27ab820d2306",
+      "stock_sha256": "bdd2965393a3438961a72d1376cef0ff4fe3f42a1c60b4daa64d27ab820d2306"
+    },
+    {
+      "out": "module/system/odm/lib64/libBasicTonePhoto.so",
+      "kind": "build",
+      "built_by": "tools/basictone_router/build.py",
+      "sha256": "271ba67f6dd3a72eb1ba181256a7a0355ae76ef9fff1cb7dc279502ba99daabe"
+    },
+    {
+      "out": "module/system/odm/lib64/libBasicTonePhotoX10.so",
+      "kind": "copy",
+      "from": "pmw110:/odm/lib64/libBasicTonePhoto.so",
+      "sha256": "56ef69910177f1766d2ca922da0c1aa3ef1893ecc9b3892cff986bfc112a95cc",
+      "stock_sha256": "56ef69910177f1766d2ca922da0c1aa3ef1893ecc9b3892cff986bfc112a95cc"
+    },
+    {
+      "out": "module/system/odm/lib64/libBasicTonePhotoX9.so",
+      "kind": "copy",
+      "from": "pma110:/odm/lib64/libBasicTonePhoto.so",
+      "sha256": "65f19d10c926d86a8fdf871ce4bd4bb67125f6086957481684a92788a44fa7dc",
+      "stock_sha256": "65f19d10c926d86a8fdf871ce4bd4bb67125f6086957481684a92788a44fa7dc"
+    }
+  ]
+}

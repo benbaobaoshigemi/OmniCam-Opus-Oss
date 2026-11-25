@@ -1,0 +1,20 @@
+--- a/module/payload/unlock25mp/oplus_camera_aps_config
++++ b/module/payload/unlock25mp/oplus_camera_aps_config
+@@ -535,7 +535,7 @@
+       "VendorTag": "com.oplus.aps.params.turboraw.thermallevel",
+       "Type": "Int32",
+       "Count": "21",
+-      "Value": "24, 24, 24, 24, 24, 24, 24, 24, 24, 20, 15, 6, 2, -1, -1, -1, -1, -1, -1, -1, -1",
++      "Value": "24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24",
+       "Comment": "turboRaw snapshop burst num from thermallevel -1 to 19"
+     },
+     {
+@@ -1617,7 +1617,7 @@
+       "VendorTag": "com.oplus.aps.params.qbc.thermallevel",
+       "Type": "Int32",
+       "Count": "21",
+-      "Value": "1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 5, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1",
++      "Value": "1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000",
+       "Comment": "QBC snapshop burst num from thermallevel -1 to 19, 41度温控8,限5张,45度温控10直接切12M"
+     },
+     {

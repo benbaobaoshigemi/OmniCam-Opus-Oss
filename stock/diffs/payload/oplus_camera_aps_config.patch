@@ -1,0 +1,16 @@
+--- a/module/payload/oplus_camera_aps_config
++++ b/module/payload/oplus_camera_aps_config
+@@ -1718,6 +1718,12 @@
+       "Type": "Int32",
+       "Count": "1",
+       "Value": "3"
++    },
++    {
++      "VendorTag": "com.oplus.color.palette.portrait.lut.weight",
++      "Type": "Float",
++      "Count": "1",
++      "Value": "0.85"
+     }
+   ]
+ }
+\ No newline at end of file

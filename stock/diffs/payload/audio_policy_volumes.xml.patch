@@ -1,0 +1,17 @@
+--- a/module/payload/audio_policy_volumes.xml
++++ b/module/payload/audio_policy_volumes.xml
+@@ -377,12 +377,8 @@
+     <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                                    ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+     #else OPLUS_BUG_STABILITY -->
+-    <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_SPEAKER">
+-        <point>1,-3500</point>
+-        <point>33,-3100</point>
+-        <point>66,-2700</point>
+-        <point>100,-2400</point>
+-    </volume>
++    <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_SPEAKER"
++                                                   ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+     <!-- #endif OPLUS_BUG_STABILITY -->
+     <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                                    ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>

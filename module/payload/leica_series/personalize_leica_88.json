@@ -1,0 +1,31 @@
+{
+  "styleId": "personalize_leica_88",
+  "version": 1,
+  "baseImageSize": 1080,
+  "imageOffset": {
+    "startX": 48.0,
+    "startY": 48.0
+  },
+  "size": {
+    "leftMargin": 48.0,
+    "topMargin": 48.0,
+    "rightMargin": 48.0,
+    "bottomMargin": 218.0
+  },
+  "background": {
+    "backgroundType": 0,
+    "color": "#FFFFFF"
+  },
+  "bitmaps": [
+    {
+      "direction": 3,
+      "width": 0,
+      "height": 0,
+      "position": {
+        "borderX": 0,
+        "borderY": 0
+      },
+      "elements": []
+    }
+  ]
+}

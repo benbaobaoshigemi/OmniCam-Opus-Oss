@@ -1,0 +1,31 @@
+{
+  "styleId": "personalize_leica_111",
+  "version": 1,
+  "baseImageSize": 1080,
+  "imageOffset": {
+    "startX": 80.0,
+    "startY": 80.0
+  },
+  "size": {
+    "leftMargin": 80.0,
+    "topMargin": 80.0,
+    "rightMargin": 80.0,
+    "bottomMargin": 302.0
+  },
+  "background": {
+    "backgroundType": 0,
+    "color": "#141414"
+  },
+  "bitmaps": [
+    {
+      "direction": 3,
+      "width": 0,
+      "height": 0,
+      "position": {
+        "borderX": 0,
+        "borderY": 0
+      },
+      "elements": []
+    }
+  ]
+}
