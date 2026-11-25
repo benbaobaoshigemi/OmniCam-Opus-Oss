@@ -100,7 +100,7 @@ GR 使用原厂限定模式的物理槽，普通照片组与 XPAN 通过同一�
 
 [`build.ps1`](../build.ps1) 负责 Gradle 发布构建与模块打包。离线测试由 [`tools/offline_tests/run.ps1`](../tools/offline_tests/run.ps1) 独立运行，色彩目录检查由 [`tools/mastercolor/check_catalog.py`](../tools/mastercolor/check_catalog.py) 独立运行，Shell 语法检查按需单独执行。
 
-设备侧待确认事项集中列在 [README 的“未验证”一节](../README.md#未验证)。
+
 
 ## 下一步
 
